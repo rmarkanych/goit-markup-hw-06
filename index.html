@@ -66,6 +66,59 @@
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
               </button>
+              <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+              <form class="modal-form">
+                <label class="modal-name-label"
+                  >Имя
+                  <input
+                    class="modal-name-input"
+                    type="text"
+                    name="username"
+                    placeholder=" "
+                    minlength="2"
+                    autofocus
+                    required
+                    autocomplete="off"
+                  />
+                </label>
+                <label class="modal-tel-label"
+                  >Телефон
+                  <input
+                    class="modal-tel-input"
+                    type="tel"
+                    name="usertel"
+                    placeholder=" "
+                    required
+                    autocomplete="off"
+                    min="1"
+                    max="10"
+                  />
+                </label>
+                <label class="modal-mail-label"
+                  >Почта
+                  <input
+                    class="modal-mail-input"
+                    type="email"
+                    name="usermail"
+                    placeholder=" "
+                    required
+                    autocomplete="off"
+                  />
+                </label>
+                <label class="modal-form-comment">
+                  Комментарий
+                  <textarea
+                    class="modal-form-textarea"
+                    name="feedback"
+                    rows="5"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </label>
+                <label class="modal-form-agreement">
+                  <input class="modal-form-checkbox" type="checkbox" name="checkerforcheckbox" />
+                </label>
+                <button class="modal-button-submit" type="submit">Отправить</button>
+              </form>
             </div>
           </div>
         </div>
@@ -388,62 +441,84 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-address-wrapper">
-          <a href="./index.html" class="link logo footer-logo"
-            >Web<span class="secondary-logo">Studio</span></a
-          >
-          <address class="footer-address">
-            <a
-              href="https://goo.gl/maps/7Yn7Yswf4JNhCeD27"
-              class="link address-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              >г. Киев, пр-т Леси Украинки, 26</a
+        <div class="footer-left-wrapper">
+          <div class="footer-address-wrapper">
+            <a href="./index.html" class="link logo footer-logo"
+              >Web<span class="secondary-logo">Studio</span></a
             >
-            <ul class="footer-contacts">
-              <li class="footer-contacts-item">
-                <a href="mailto:info@example.com" class="link footer-contacts-link"
-                  >info@example.com</a
-                >
+            <address class="footer-address">
+              <a
+                href="https://goo.gl/maps/7Yn7Yswf4JNhCeD27"
+                class="link address-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+              <ul class="footer-contacts">
+                <li class="footer-contacts-item">
+                  <a href="mailto:info@example.com" class="link footer-contacts-link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-contacts-item">
+                  <a href="tel:+380991111111" class="link footer-contacts-link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social-wrapper">
+            <p class="footer-social-description">присоединяйтесь</p>
+            <ul class="footer-icon-list">
+              <li class="footer-icon-item">
+                <a class="footer-icon-link link" href="">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-contacts-item">
-                <a href="tel:+380991111111" class="link footer-contacts-link">+38 099 111 11 11</a>
+              <li class="footer-icon-item">
+                <a class="footer-icon-link link" href="">
+                  <svg class="team-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-icon-item">
+                <a class="footer-icon-link link" href="">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-icon-item">
+                <a class="footer-icon-link link" href="">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer-social-wrapper">
-          <p class="footer-social-description">присоединяйтесь</p>
-          <ul class="footer-icon-list">
-            <li class="footer-icon-item">
-              <a class="footer-icon-link link" href="">
-                <svg class="footer-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use>
+        <div class="footer-right-wrapper">
+          <p class="footer-subscription-description footer-social-description">
+            Подпишитесь на рассылку
+          </p>
+          <form class="footer-subscription-form">
+            <div class="footer-subscription-wrapper">
+              <label class="footer-subscription-label">
+                <input class="footer-subscription-input" type="text" placeholder="E-mail" />
+              </label>
+              <button class="footer-subscription-button" type="submit">
+                Подписаться
+                <svg class="footer-subscription-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="footer-icon-item">
-              <a class="footer-icon-link link" href="">
-                <svg class="team-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-icon-item">
-              <a class="footer-icon-link link" href="">
-                <svg class="footer-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-icon-item">
-              <a class="footer-icon-link link" href="">
-                <svg class="footer-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
