@@ -306,7 +306,7 @@ img {
 .modal-name-input,
 .modal-tel-input,
 .modal-mail-input {
-  padding-left: 40px;
+  /* padding-left: 40px; */
   min-height: 40px;
   width: 100%;
   display: flex;
@@ -324,6 +324,7 @@ img {
 .modal-mail-label,
 .modal-tel-label,
 .modal-name-label {
+  font-size: 12px;
   position: relative;
   width: 100%;
   display: flex;
@@ -342,10 +343,24 @@ input {
   margin-bottom: 10px;
   position: relative;
 }
-.modal-name-input ~ .modal-name-icon {
+.modal-name-field {
+  position: relative;
+  width: 100%;
+}
+.modal-mail-field {
+  position: relative;
+  width: 100%;
+}
+.modal-tel-field {
+  position: relative;
+  width: 100%;
+}
+.modal-name-icon {
   position: absolute;
-  top: 34px;
-  left: 12px;
+  display: flex;
+  margin-left: 12px;
+  top: 50%;
+  transform: translate(0%, -50%);
   transition: fill var(--transition-time) var(--transition-cubic);
 }
 .modal-name-input:hover,
@@ -356,10 +371,12 @@ input {
 .modal-name-input:focus + .modal-name-icon {
   fill: var(--primary-blue-color);
 }
-.modal-tel-input ~ .modal-tel-icon {
+.modal-tel-icon {
   position: absolute;
-  top: 34px;
-  left: 12px;
+  display: flex;
+  margin-left: 12px;
+  top: 50%;
+  transform: translate(0%, -50%);
   transition: fill var(--transition-time) var(--transition-cubic);
 }
 .modal-tel-input:hover,
@@ -370,10 +387,12 @@ input {
 .modal-tel-input:focus + .modal-tel-icon {
   fill: var(--primary-blue-color);
 }
-.modal-mail-input ~ .modal-mail-icon {
+.modal-mail-icon {
   position: absolute;
-  top: 31px;
-  left: 12px;
+  margin-left: 12px;
+  display: flex;
+  top: 50%;
+  transform: translate(0%, -50%);
   transition: fill var(--transition-time) var(--transition-cubic);
 }
 .modal-mail-input:hover,
